@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container-local{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(lightgray, white);
+}
+.tabela-index-categoria{
+    max-width: 300px;
+    border: 1px solid gray;
+}
+.td-index-categoria{
+   width: 50%;
+   text-align: center; 
+   border: 1px solid gray;
+}
+.form-create-categoria{
+    max-width: 200px;
+    border-radius: 7px;
+    text-align: center;
+}
+.div-create-categoria{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightgray;
+}
+.ul{
+    list-style: none;
+}
