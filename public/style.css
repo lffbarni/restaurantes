@@ -20,8 +20,9 @@
    border: 1px solid gray;
 }
 .form-create-categoria{
-    max-width: 200px;
+    max-width: 300px;
     border-radius: 7px;
+    padding: 2px;
     text-align: center;
 }
 .div-create-categoria{
@@ -37,4 +38,10 @@
 }
 .ul{
     list-style: none;
+}
+.imagem{
+    max-width: 300px;
+    max-height: 200px;
+    min-width: 300px;
+    min-height: 200px;
 }

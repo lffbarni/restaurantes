@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('title','Categoria - {{$categoria->nome}}')
 @section('content')
-    <h1>Contato - {{$categoria->nome}}</h1>
+    <h1>Categoria - {{$categoria->nome}}</h1>
     <ul class="ul">
         <h4>
             <li>ID: {{$categoria->id}}</li>
