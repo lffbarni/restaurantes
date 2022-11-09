@@ -30,6 +30,9 @@ class CategoriaController extends Controller
     }
     public function update(Request $request, $id)
     {
+    $this->validate($request,[
+        'nome' => 'required' 
+    ]);
         $categoria = Categoria::find($id);
         $categoria->nome = $request->input('nome');
         if($categoria->save()) {
@@ -45,6 +48,9 @@ class CategoriaController extends Controller
     }
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'nome' => 'required' 
+        ]);
         $categoria = new Categoria();
         $categoria->nome = $request->input('nome');
         if($categoria->save()) {

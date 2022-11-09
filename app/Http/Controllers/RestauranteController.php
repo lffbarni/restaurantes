@@ -31,6 +31,11 @@ class RestauranteController extends Controller
     }
     public function update(Request $request, $id)
     {
+        $this->validate($request,[
+            'nome' => 'required',
+            'categoria_id' => 'required',
+            'imagem' => 'required'
+        ]);
         $restaurante = Restaurante::find($id);
         $restaurante->nome = $request->input('nome');
         $restaurante->categoria_id = $request->input('categoria_id');

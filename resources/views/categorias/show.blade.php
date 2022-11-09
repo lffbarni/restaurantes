@@ -2,12 +2,17 @@
 @section('title','Categoria - {{$categoria->nome}}')
 @section('content')
     <h1>Categoria - {{$categoria->nome}}</h1>
-    <ul class="ul">
-        <h4>
-            <li>ID: {{$categoria->id}}</li>
-            <li>Nome: {{$categoria->nome}}</li>
-        </h4>
-    </ul>
+    <br>
+    <div class="card-todo">
+        <div class="conteudo">
+            <h4>
+            ID: {{$categoria->id}}
+            <br>
+            Nome: {{$categoria->nome}}
+            </h4>
+        </div>
+    </div>   
+    <br>
     {{Form::open(['route' => ['categorias.destroy',$categoria->id],'method' => 'DELETE'])}}
     <a href="{{url('categorias/'.$categoria->id.'/edit')}}" class="btn btn-success">Alterar</a>
     {{Form::submit('Excluir',['class'=>'btn btn-danger'])}}
